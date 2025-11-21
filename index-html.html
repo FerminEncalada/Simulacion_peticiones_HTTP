@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación de Peticiones HTTP</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Prueba de Peticiones HTTP</h1>
+        
+        <!-- Sección de botones para las peticiones -->
+        <section class="botones">
+            <button id="btnGet">Realizar GET</button>
+            <button id="btnPost">Realizar POST</button>
+            <button id="btnPut">Realizar PUT</button>
+            <button id="btnDelete">Realizar DELETE</button>
+        </section>
+
+        <!-- Sección para mostrar información de la petición -->
+        <section class="info-peticion">
+            <h2>Información de la Petición</h2>
+            <div id="infoPeticion">
+                <p><strong>URL:</strong> <span id="urlInfo">-</span></p>
+                <p><strong>Método:</strong> <span id="metodoInfo">-</span></p>
+                <p><strong>Código de Estado:</strong> <span id="codigoInfo">-</span></p>
+                <p><strong>Tiempo de Respuesta:</strong> <span id="tiempoInfo">-</span></p>
+            </div>
+        </section>
+
+        <!-- Sección para mostrar el resultado -->
+        <section class="resultado-section">
+            <h2>Resultado</h2>
+            <div id="resultado">
+                <p>Presiona un botón para realizar una petición...</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Módulos JavaScript -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
