@@ -1,0 +1,138 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #34495e;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+/* Sección de botones */
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#btnGet {
+    background-color: #3498db;
+    color: white;
+}
+
+#btnPost {
+    background-color: #2ecc71;
+    color: white;
+}
+
+#btnPut {
+    background-color: #f39c12;
+    color: white;
+}
+
+#btnDelete {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Sección de información */
+.info-peticion {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#infoPeticion p {
+    margin-bottom: 8px;
+}
+
+#infoPeticion span {
+    color: #2980b9;
+}
+
+/* Sección de resultado */
+.resultado-section {
+    background-color: #2c3e50;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.resultado-section h2 {
+    color: #ecf0f1;
+}
+
+#resultado {
+    background-color: #1a252f;
+    padding: 15px;
+    border-radius: 5px;
+    color: #2ecc71;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    max-height: 300px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .botones {
+        flex-direction: column;
+    }
+    
+    button {
+        width: 100%;
+    }
+}
